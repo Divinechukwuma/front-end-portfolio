@@ -1,303 +1,396 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Divine-Travel-Agency</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="js/main.js" defer></script>
-</head>
+  </head>
 
-<body class="min-h-screen bg-[#d9bfb0]">
-    <header class="bg-[rgb(166,112,65)] text-white sticky top-0 z-10 ">
-        <section class="max-w-8xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-3xl font-medium">
-                <a href="#hero"><span class="text-yellow-300 font-serif">🌏Divine-</span>Travel-Agency </a>
-            </h1>
+  <body class="min-h-screen bg-[#d9bfb0]">
+    <header class="bg-[rgb(166,112,65)] text-white sticky top-0 z-10">
+      <section class="max-w-8xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero"
+            ><span class="text-yellow-300 font-serif">🌏Divine-</span
+            >Travel-Agency
+          </a>
+        </h1>
 
-            <button id="hamburger-button" class="text-3xl sm:block  md:hidden cursor-pointer ">
-                &#9776;
-            </button>
-
-            <nav class="hidden md:block   space-x-3 text-xl" aria-label="main">
-                <a href="#place" class="hover:bg-[#733a26] font-sans">Places</a>
-                <a href="#testimonials" class="hover:bg-[#733a26] font-sans">Testimonials</a>
-                <a href="#contact" class="hover:bg-[#733a26] font-sans">Contact Us</a>
-            </nav>
-            <section
-        id="mobile-menu"  
-        class="absolute top-0 bg-[#733a26] w-full text-5xl flex-col h-[88rem] origin-top animate-open-menu hidden"
-      >
-        <!-- this is the first variation of the hamburger icon buton -->
-         <button class="text-8xl self-end px6">&times;</button> 
-        <nav
-          class="flex flex-col min-h-screen items-center py-8"
-          aria-label="mobile"
+        <button
+          id="hamburger-button"
+          class="text-3xl sm:block md:hidden cursor-pointer"
         >
-          <a href="#hero" class="w-full text-center hover:opacity-90 py-6 text-white"
-            >Home</a
-          >
-          <a href="#place" class="w-full text-center hover:opacity-90 py-6 text-white"
-            >Places</a
-          >
-          <a
-            href="#testimonials"
-            class="w-full text-center hover:opacity-90 py-6 text-white"
+          &#9776;
+        </button>
+
+        <nav class="hidden md:block space-x-3 text-xl" aria-label="main">
+          <a href="#place" class="hover:bg-[#733a26] font-sans">Places</a>
+          <a href="#testimonials" class="hover:bg-[#733a26] font-sans"
             >Testimonials</a
           >
-          <a href="#contact" class="w-full text-center hover:opacity-90 py-6 text-white"
-            >Contact</a
-          >
-          <a href="#footer" class="w-full text-center hover:opacity-90 py-6 text-white"
-            >Legal</a
-          >
+          <a href="#contact" class="hover:bg-[#733a26] font-sans">Contact Us</a>
         </nav>
+        <section
+          id="mobile-menu"
+          class="absolute top-0 bg-[#733a26] w-full text-5xl flex-col h-[88rem] origin-top animate-open-menu hidden"
+        >
+          <!-- this is the first variation of the hamburger icon buton -->
+          <button class="text-8xl self-end px6">&times;</button>
+          <nav
+            class="flex flex-col min-h-screen items-center py-8"
+            aria-label="mobile"
+          >
+            <a
+              href="#hero"
+              class="w-full text-center hover:opacity-90 py-6 text-white"
+              >Home</a
+            >
+            <a
+              href="#place"
+              class="w-full text-center hover:opacity-90 py-6 text-white"
+              >Places</a
+            >
+            <a
+              href="#testimonials"
+              class="w-full text-center hover:opacity-90 py-6 text-white"
+              >Testimonials</a
+            >
+            <a
+              href="#contact"
+              class="w-full text-center hover:opacity-90 py-6 text-white"
+              >Contact</a
+            >
+            <a
+              href="#footer"
+              class="w-full text-center hover:opacity-90 py-6 text-white"
+              >Legal</a
+            >
+          </nav>
+        </section>
       </section>
-        </section>
-
     </header>
-    <main class="max-w-7xl mx-auto ">
-        <section class="scroll-mt-20">
-            <img src="img/drawkit-transport-scene-8.png" alt="drawkit-transport-scene-4"
-                class="  lg:w-4/6 h-3/4 relative lg:left-60 max-sm:h-80 ">
-            <img id="hero" src="img/beach-1236581_1280.jpg" alt="beach-1236581_640"
-                class=" top-96 mt-11 rounded-3xl md:h-[38rem] md:w-[90%] md:ml-14 ">
-            <article class="absolute max-sm:top-[31rem] top-[50rem] lg:left-[15%] md:top-[45rem]">
-                <h1 class="text-white font-bold text-5xl max-sm:text-2xl pb-2 font-serif max-sm:ml-4"><span
-                        class="text-yellow-500">🌏 Divine-</span>Travel-Agency</h1>
-                <h2 class="max-w-md text-3xl font-bold max-sm:text-xl text-white font-sans max-sm:ml-5">
-                    We Take You
-                    <span class="text-[#012e40]">
-                        Round The World, </span><br>So You Can Explore.
-                </h2>
-                <p class="max-w-md text-xl mt-3 text-white max-sm:hidden font-mono">
-                    We Give You Life Time Experiences For Cheap
-                </p>
-                <button
-                    class="p-3 bg-[#012e40] mt-4 w-80 rounded-3xl text-white text-4xl font-bold max-sm:w-40 max-sm:text-2xl shadow-2xl font-serif max-sm:ml-5">Explore</button>
-            </article>
+    <main class="max-w-7xl mx-auto">
+      <section class="scroll-mt-20">
+        <img
+          src="img/drawkit-transport-scene-8.png"
+          alt="drawkit-transport-scene-4"
+          class="lg:w-4/6 h-3/4 relative lg:left-60 max-sm:h-80"
+        />
+        <img
+          id="hero"
+          src="img/beach-1236581_1280.jpg"
+          alt="beach-1236581_640"
+          class="top-96 mt-11 rounded-3xl md:h-[38rem] md:w-[90%] md:ml-14"
+        />
+        <article
+          class="absolute max-sm:top-[30rem] lg:top-[48rem] lg:left-[18%]"
+        >
+          <h1
+            class="text-white font-bold text-5xl max-sm:text-2xl pb-2 font-serif max-sm:ml-4"
+          >
+            <span class="text-yellow-500">🌏 Divine-</span>Travel-Agency
+          </h1>
+          <h2
+            class="max-w-md text-3xl font-bold max-sm:text-xl text-white font-sans max-sm:ml-5"
+          >
+            We Take You
+            <span class="text-[#012e40]"> Round The World, </span><br />So You
+            Can Explore.
+          </h2>
+          <p class="max-w-md text-xl mt-3 text-white max-sm:hidden font-mono">
+            We Give You Life Time Experiences For Cheap
+          </p>
+          <button
+            class="p-3 bg-[#012e40] mt-4 w-80 rounded-3xl text-white text-4xl font-bold max-sm:w-40 max-sm:text-2xl shadow-2xl font-serif max-sm:ml-5"
+          >
+            Explore
+          </button>
+        </article>
+      </section>
+      <br />
+      <hr class="mx-auto bg-white w-3/5 h-3" />
+      <section id="place" class="scroll-mt-20">
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-[#012e40] font-serif"
+        >
+          Places
+        </h2>
+        <ul
+          class="list-none ml-8 mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="bg-[#1f788c] py-1 max-sm:py-8 px-4 rounded-3xl shadow-xl w-[47%] max-sm:w-3/4"
+          >
+            <img
+              src="img/great-wall-of-china-5483516_1280.jpg"
+              alt="great-wall-of-china-5483516_1280"
+              class="mb-6 h-40 rounded-3xl max-sm:h-30 max-sm:mb-10 max-sm:ml-3.5"
+            />
+            <h3
+              class="text-2xl sm:text-3xl mt-2 text-white font-extrabold before:font-serif before:absolute before:top-50 before:center-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              CHINA:
+            </h3>
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              One of our most famous places with an amazing travel plan
+            </p>
+          </li>
+          <li
+            class="bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%] max-sm:w-3/4"
+          >
+            <img
+              src="img/egypt.jpg"
+              alt="egypt"
+              class="mb-6 h-40 rounded-3xl max-sm:mb-16 max-sm:ml-5 max-sm:my-4"
+            />
+            <h3
+              class="text-2xl sm:text-3xl text-left mt-2 text-white font-extrabold before:font-serif before:absolute before:top-50 before:center-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              EGYPT:
+            </h3>
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              We provide good hotels with a wonderful travel plan
+            </p>
+          </li>
+        </ul>
+        <ul
+          class="list-none ml-10 mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%] max-sm:w-3/4"
+          >
+            <img
+              src="img/cruise.jpg"
+              alt="cruise"
+              class="mb-6 h-40 rounded-3xl max-sm:mb-16 max-sm:ml-4 max-sm:my-4"
+            />
+            <h3
+              class="text-2xl sm:text-3xl text-left mt-2 text-white font-bold before:font-serif before:absolute before:top-50 before:center-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              CRUISE:
+            </h3>
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              We give you a once in a life time cruise experince
+            </p>
+          </li>
+          <li
+            class="bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%] max-sm:w-3/4"
+          >
+            <img
+              src="img/new york (1).jpg"
+              alt="new york"
+              class="mb-6 h-40 rounded-3xl max-sm:mb-20 max-sm:ml-3.5 max-sm:my-4"
+            />
+            <h3
+              class="text-2xl sm:text-3xl text-left mt-2 text-white font-extrabold before:font-serif before:absolute before:top-50 before:center-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              NEW YORK:
+            </h3>
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              We provide a trip to one of the best cities in america
+            </p>
+          </li>
+        </ul>
+
+        <ul
+          class="list-none ml-10 mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 max-sm:hidden"
+        >
+          <li class="bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%]">
+            <img
+              src="img/pexels-pixabay-532826.jpg"
+              alt="pexels-flo-dahm-699466"
+              class="mb-6 h-40 rounded-3xl"
+            />
+            <h3
+              class="text-2xl sm:text-3xl text-left mt-2 text-white font-extrabold before:font-serif before:absolute before:top-50 before:center-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              EIFFLE TOWER:
+            </h3>
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              We take you too the most popular tourist attraction in france
+            </p>
+          </li>
+          <li class="bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%]">
+            <img
+              src="img/places (1).jpg"
+              alt="places"
+              class="mb-6 h-40 rounded-3xl"
+            />
+            <h3
+              class="text-2xl sm:text-3xl text-left mt-2 text-white font-extrabold before:font-serif before:absolute before:top-50 before:center-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              CASTLES:
+            </h3>
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              We take you to hystorical places to go see and live like kings and
+              queens
+            </p>
+          </li>
+        </ul>
+
+        <hr class="mx-auto bg-white w-3/5 h-3 mt-12" />
+
+        <section
+          id="testimonials"
+          class="p-6 mb-12 scroll-mt-20 text-[#012e40]"
+        >
+          <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6">
+            Testimonials
+          </h2>
+
+          <figure class="my-12">
+            <blockquote
+              class="bg-[#012e40] pl-14 pr-8 py-12 rounded-3xl relative"
+            >
+              <p
+                class="text-2xl sm:text-3xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+              >
+                <span class="text-yellow-500">Divine-</span>Travel-Agency Has
+                always been there for me. There friendly travel prices and
+                amazing locations. Life-Long customer! A++ Travel Experience
+              </p>
+            </blockquote>
+
+            <figcaption
+              class="italic text-xl sm:text-2xl text-right mt-2 text-[#1f788c]"
+            >
+              &#8212; Wile E. Cayote,Genius
+            </figcaption>
+          </figure>
+
+          <figure class="my-12">
+            <blockquote
+              class="bg-[#012e40] pl-14 pr-8 py-12 rounded-3xl relative"
+            >
+              <p
+                class="text-2xl sm:text-3xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+              >
+                The <span class="text-yellow-500">Divine-</span>Travel-Agency
+                they are very unprofessional
+                <span class="italic"
+                  >My flight was cancled and they failed to relay the
+                  information too me</span
+                >
+                But my Trip was wonderful 4stars🌟
+              </p>
+            </blockquote>
+
+            <figcaption
+              class="italic text-xl sm:text-2xl text-right mt-2 text-[#1f788c]"
+            >
+              &#8212; Blessing C. Ogechi,Doctor
+            </figcaption>
+          </figure>
+
+          <figure class="my-12">
+            <blockquote
+              class="bg-[#012e40] pl-14 pr-8 py-12 rounded-3xl relative"
+            >
+              <p
+                class="text-2xl sm:text-3xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+              >
+                I order a business trip plan
+                <span class="italic">And the experince was splendid 💯</span
+                >5stars🌟
+              </p>
+            </blockquote>
+
+            <figcaption
+              class="italic text-xl sm:text-2xl text-right mt-2 text-[#1f788c]"
+            >
+              &#8212; Chimobi C. Amuchi,Business Tycoon
+            </figcaption>
+          </figure>
         </section>
-        <br>
-        <hr class="mx-auto bg-white w-3/5 h-3" />
-        <section id="place" class="scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-[#012e40] font-serif">
-                Places
-            </h2>
-            <ul class="list-none ml-8 mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-                <li class=" bg-[#1f788c] py-1 max-sm:py-8 px-4 rounded-3xl shadow-xl w-[47%] max-sm:w-3/4">
-                    <img src="img/great-wall-of-china-5483516_1280.jpg" alt="great-wall-of-china-5483516_1280" class="mb-6 h-40 rounded-3xl max-sm:h-30 max-sm:mb-10 max-sm:ml-7" />
-                    <h3
-                        class="text-4xl text-center text-white font-bold absolute top-[83rem] left-[28%] font-serif max-sm:absolute max-sm:top-[58rem] max-sm:left-[35%] ">
-                        CHINA:
-                    </h3>
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2  lg:absolute  top-[85rem] left-[28%] font-sans">
-                        One of our most famous places in
-                    </p>
 
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2   top-[87rem] left-[28%] font-sans lg:absolute">
-                        with a wonderful travel plan
-                    </p>
-                </li>
-                <li class=" bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%] max-sm:w-3/4">
-                    <img src="img/egypt.jpg" alt="egypt" class="mb-6 h-40 rounded-3xl  max-sm:mb-16 max-sm:ml-5 max-sm:my-4" />
-                    <h3
-                        class="text-4xl text-center text-white font-bold absolute top-[82rem] left-[68%] font-serif max-sm:absolute max-sm:top-[79rem] max-sm:left-[38%]">
-                        EGYPT:
-                    </h3>
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2  lg:absolute top-[87rem] left-[68%] font-sans ">
-                        We provide good hotels
-                    </p>
+        <hr class="mx-auto bg-white w-3/5 h-3 mt-12" />
+      </section>
 
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2 lg:absolute  top-[85rem] left-[68%] font-sans ">
-                        with a wonderful travel plan
-                    </p>
-                </li>
+      <section
+        id="contact"
+        class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-[#012e40]"
+        >
+          Contact Us
+        </h2>
 
-
-
-            </ul>
-            <ul class="list-none ml-10 mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-                <li class=" bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%] max-sm:w-3/4 ">
-                    <img src="img/cruise.jpg" alt="cruise" class="mb-6 h-40 rounded-3xl max-sm:mb-16 max-sm:ml-4 max-sm:my-4" />
-                    <h3
-                        class="text-4xl text-center text-white font-bold absolute top-[98rem] left-[29%] font-serif max-sm:absolute max-sm:top-[102rem] max-sm:left-[37%]">
-                        CRUISE:
-                    </h3>
-                    
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2 top-[100rem] left-[29%] font-sans lg:absolute">
-                        We provide once in a life time
-                    </p>
-
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2 lg:absolute  top-[102rem] left-[29%] font-sans ">
-                        cruise experince
-                    </p>
-                </li>
-                <li class=" bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%] max-sm:w-3/4">
-                    <img src="img/new york (1).jpg" alt="new york" class="mb-6 h-40 rounded-3xl max-sm:mb-20 max-sm:ml-3.5 max-sm:my-4" />
-                    <h3
-                        class="text-4xl text-center text-white font-bold absolute top-[98rem] left-[68%] font-serif  max-sm:absolute max-sm:top-[124rem] max-sm:left-[29%]">
-                        NEW YORK
-                    </h3>
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2 lg:absolute  top-[100rem] left-[68%] font-sans">
-                        We provide a trip to
-                    </p>
-
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2 lg:absolute  top-[102rem] left-[68%] font-sans ">
-                        one of the best city in america
-                    </p>
-                </li>
-
-
-
-            </ul>
-
-            <ul class="list-none ml-10 mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 max-sm:hidden">
-                <li class=" bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%]">
-                    <img src="img/pexels-flo-dahm-699466.jpg" alt="pexels-flo-dahm-699466"
-                        class="mb-6 h-40 rounded-3xl " />
-                    <h3 class="text-4xl text-center text-white font-bold absolute top-[113rem] left-[25%] font-serif">
-                        EIFFLE TOWER:
-                    </h3>
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2  absolute  top-[115rem] left-[25%] font-sans ">
-                        We Take you to the most popular
-                    </p>
-
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2  absolute  top-[117rem] left-[25%] font-sans ">
-                        tourist attraction in france
-                    </p>
-                </li>
-                <li class=" bg-[#1f788c] py-1 px-4 rounded-3xl shadow-xl w-[47%]">
-                    <img src="img/places (1).jpg" alt="places" class="mb-6 h-40 rounded-3xl " />
-                    <h3 class="text-4xl text-center text-white font-bold absolute top-[113rem] left-[68%] font-serif">
-                        CASTLES:
-                    </h3>
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2  absolute  top-[115rem] left-[68%] font-sans ">
-                        we take you to see hystorical
-                    </p>
-
-                    <p
-                        class=" text-xl text-center text-white font-medium mt-2  absolute  top-[117rem] left-[68%] font-sans ">
-                        places where king and queen lived
-                    </p>
-                </li>
-
-            </ul>
-
-
-            <hr class="mx-auto bg-white w-3/5 h-3 mt-12" />
-
-            <section id="testimonials" class="p-6 mb-12 scroll-mt-20  text-[#012e40]">
-                <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6">
-                    Testimonials
-                </h2>
-
-                <figure class="my-12">
-                    <blockquote class=" bg-[#012e40] pl-14 pr-8 py-12 rounded-3xl relative">
-                        <p
-                            class="text-2xl sm:text-3xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
-                            <span class="text-yellow-500">Divine-</span>Travel-Agency Has always been there for me.
-                            There friendly travel
-                            prices and amazing locations. Life-Long customer! A++ Travel
-                            Experience
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-[#1f788c] ">
-                        &#8212; Wile E. Cayote,Genius
-                    </figcaption>
-                </figure>
-
-                <figure class="my-12">
-                    <blockquote class="bg-[#012e40] pl-14 pr-8 py-12 rounded-3xl relative">
-                        <p
-                            class="text-2xl sm:text-3xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
-                            The <span class="text-yellow-500">Divine-</span>Travel-Agency they are very unprofessional
-                            <span class="italic">My flight was cancled and they failed to relay the information
-                                too me</span> But my Trip was wonderful 4stars🌟
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-[#1f788c]">
-                        &#8212; Blessing C. Ogechi,Doctor
-                    </figcaption>
-                </figure>
-
-                <figure class="my-12">
-                    <blockquote class="bg-[#012e40] pl-14 pr-8 py-12 rounded-3xl relative">
-                        <p
-                            class="text-2xl sm:text-3xl text-left mt-2 text-white  before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
-                            I order a business trip plan
-                            <span class="italic">And the experince was splendid 💯</span>5stars🌟
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-[#1f788c]">
-                        &#8212; Chimobi C. Amuchi,Business Tycoon
-                    </figcaption>
-                </figure>
-            </section>
-
-            <hr class="mx-auto bg-white w-3/5 h-3 mt-12" />
-
-        </section>
-
-
-        <section id="contact"
-            class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-[#012e40]">
-                Contact Us
-            </h2>
-
-            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
-                <label for="subject" class="text-[#012e40] ">Subject:</label>
-                <input type="text" id="subject" name="subject" minlength="3" maxlength="60"
-                    class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
-                    required />
-                <label for="message" class="text-[#012e40] ">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"
-                    class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
-                    required></textarea>
-                <button class="bg-[#1f788c] hover:bg-[#012e40]  text-white p-3 w-48 rounded-xl border border-solid ">
-                    Submit
-                </button>
-            </form>
-        </section>
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject" class="text-[#012e40]">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            minlength="3"
+            maxlength="60"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+            required
+          />
+          <label for="message" class="text-[#012e40]">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+            required
+          ></textarea>
+          <button
+            class="bg-[#1f788c] hover:bg-[#012e40] text-white p-3 w-48 rounded-xl border border-solid"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
     </main>
 
     <footer id="footer" class="bg-[#012e40] text-white text-xl">
-        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
-            <address>
-                <h2><span class="text-yellow-500">Divine-</span>Travel-Agency inc,</h2>
-                55 Astro Way<br />
-                Fairfield,New York 12345-4444<br />
-                Email:
-                <a href="mailto:divinechukwuma982@gmail.com"><span class="text-yellow-500">Divine-</span>Travel-Agency@gmail.com</a><br />
-                Phone: <a href="tell:+23409074893">09072864729</a>
-            </address>
-            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
-                <a href="#place" class="hover:opacity-90">Places</a>
-                <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-                <a href="#contact" class="hover:opacity-90">Contact Us</a>
-            </nav>
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>
+            <span class="text-yellow-500">Divine-</span>Travel-Agency inc,
+          </h2>
+          55 Astro Way<br />
+          Fairfield,New York 12345-4444<br />
+          Email:
+          <a href="mailto:divinechukwuma982@gmail.com"
+            ><span class="text-yellow-500">Divine-</span
+            >Travel-Agency@gmail.com</a
+          ><br />
+          Phone: <a href="tell:+23409074893">09072864729</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#place" class="hover:opacity-90">Places</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
 
-            <div class="flex flex-col sm:gap-2">
-                <p class="text-right">Copyright &copy;<span id="year">2024</span></p>
-                <p class="text-right">All Rights Reserved</p>
-            </div>
-        </section>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy;<span id="year">2024</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>
